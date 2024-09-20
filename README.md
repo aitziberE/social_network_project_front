@@ -1,8 +1,15 @@
-# React + Vite
+Una vez analizadas las necesidades del proyecto, se espera
+que el alumno desarrolle un frontend que sea capaz de lo siguiente:
+● Registro de usuarios.
+● Login de usuarios.
+● Que se pueda ver las publicaciones y crear nuevas.
+● Que se puedan editar y eliminar las publicaciones que hace el usuario logeado
+● Dar/quitar Like a post.
+● Buscador de perfiles de usuario o de posts
+● Que en tu perfil puedas ver tus datos y tus posts
+● Que puedas comentar en las publicaciones
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Requisitos imprescindibles del proyecto:
+● Uso de ramas con git, cuando se termine el proyecto deberán quedar dos ramas la master o main y la develop.
+● Presentación de README excelente.
