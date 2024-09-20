@@ -14,7 +14,8 @@ function App() {
     <>
       <Provider store={store}>
         <Router>
-      {/* <TheHeader/> */}
+          
+          <TheHeader/>
 
           <Routes>
             <Route path="/home" element={<Home/>}/>
