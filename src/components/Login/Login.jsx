@@ -24,7 +24,7 @@ const Login = () => {
       if (isSuccess) {
         notification.success({ message: 'Success', description: message })
         setTimeout(() => {
-          navigate('/profile')
+          navigate('/home')
         }, 2000)
       }
       dispatch(reset())
@@ -38,8 +38,8 @@ const Login = () => {
 
   return (
     <form onSubmit={onSubmit}>
-        <input type="email" name="email" value={email} onChange={onChange}/>
-        <input type="password" name="password" value={password} onChange={onChange}/>
+        <input type="email" name="email" placeholder="email" value={email} onChange={onChange}/>
+        <input type="password" name="password" placeholder="password" value={password} onChange={onChange}/>
         <button type="submit">Login</button>
     </form>
   )

@@ -8,6 +8,8 @@ import Profile from './components/Profile/Profile'
 import { Provider } from 'react-redux'
 import { store } from './redux/store'
 import PostDetail from './components/Posts/PostDetail'
+import TheHeader from './components/TheHeader/TheHeader'
+import AuthPage from './components/AuthPage/AuthPage'
 
 function App() {
 
@@ -16,9 +18,10 @@ function App() {
       <Provider store={store}>
         <Router>
           
-          <TheHeader/>
+         {location.pathname !== '/' && <TheHeader />}
 
           <Routes>
+            <Route path="/" element={<AuthPage/>}/>
             <Route path="/home" element={<Home/>}/>
             <Route path="/login" element={<Login/>}/>
             <Route path="/register" element={<Register/>}/>
