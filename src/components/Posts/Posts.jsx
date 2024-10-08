@@ -5,6 +5,7 @@ import { getAll,reset } from "../../redux/posts/postsSlice"
 
 const Posts = () => {
     const { isLoading } = useSelector((state) => state.posts)
+
     const dispatch = useDispatch()
     useEffect(() => {
         const fetchPosts = async () => {
@@ -18,6 +19,8 @@ const Posts = () => {
         <>
         <h1>Posts</h1>
         {isLoading ? 'Cargando...' : <Post />}
+
+        {post}
         </>
     )
 }
